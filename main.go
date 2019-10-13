@@ -4,7 +4,7 @@ Thales CPL
 */
 package main
 
-import "solcates/dronemap/cmd"
+import "github.com/solcates/dronemap/cmd"
 
 func main() {
   cmd.Execute()
