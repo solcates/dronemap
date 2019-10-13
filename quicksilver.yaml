@@ -1,0 +1,13 @@
+name: dronemap
+repo: solcates/dronemap
+openapi: false
+skaffold: true
+clientcpp: true
+clientjava: true
+clientjs: true
+clientpython: false
+cli: true
+protobuff: []
+xxx_nounkeyedliteral: {}
+xxx_unrecognized: []
+xxx_sizecache: 0

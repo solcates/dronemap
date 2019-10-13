@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package dronemap;
+
+import "google/api/annotations.proto";
+
+message EchoRequest {
+    string message = 1;
+}
+
+message EchoResponse {
+    string response = 1;
+}
+
+service EchoService {
+    rpc Echo(EchoRequest) returns (EchoResponse) {
+        option (google.api.http) = {
+            post: "/v1/echo"
+            body: "*"
+        };
+    }
+}
