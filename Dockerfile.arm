@@ -1,6 +1,6 @@
 FROM golang:1.13 as builder
 ENV GOOS linux
-ENV GOARCH amd64
+ENV GOARCH arm
 
 ADD apis /dronemap/apis
 ADD go.mod /dronemap/go.mod

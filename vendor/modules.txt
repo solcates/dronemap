@@ -1,5 +1,9 @@
 # github.com/fsnotify/fsnotify v1.4.7
 github.com/fsnotify/fsnotify
+# github.com/gobuffalo/uuid v2.0.5+incompatible
+github.com/gobuffalo/uuid
+# github.com/gofrs/uuid v3.2.0+incompatible
+github.com/gofrs/uuid
 # github.com/golang/protobuf v1.3.2
 github.com/golang/protobuf/descriptor
 github.com/golang/protobuf/jsonpb
@@ -15,6 +19,10 @@ github.com/golang/protobuf/ptypes/wrappers
 github.com/grpc-ecosystem/grpc-gateway/internal
 github.com/grpc-ecosystem/grpc-gateway/runtime
 github.com/grpc-ecosystem/grpc-gateway/utilities
+# github.com/hashicorp/errwrap v1.0.0
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-multierror v1.0.0
+github.com/hashicorp/go-multierror
 # github.com/hashicorp/hcl v1.0.0
 github.com/hashicorp/hcl
 github.com/hashicorp/hcl/hcl/ast
@@ -49,6 +57,9 @@ github.com/spf13/jwalterweatherman
 github.com/spf13/pflag
 # github.com/spf13/viper v1.4.0
 github.com/spf13/viper
+# gobot.io/x/gobot v1.13.0
+gobot.io/x/gobot
+gobot.io/x/gobot/platforms/dji/tello
 # golang.org/x/net v0.0.0-20190522155817-f3200d17e092
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2

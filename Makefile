@@ -24,4 +24,4 @@ minikube-mac:
 ## Tiller
 tiller:
 		@kubectl apply -f tiller.yaml
-		@helm init --service-account=tiller --upgrade
+		@helm init --service-account=tiller --upgrade --tiller-image=jessestuart/tiller

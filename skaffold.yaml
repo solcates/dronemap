@@ -4,7 +4,30 @@ metadata:
   name: dronemap
 build:
   artifacts:
-  - image: solcates/dronemap
-    docker: {}
-  local:
-    push: true
+    - image: solcates/dronemap_linux_amd64
+      docker:
+        dockerfile: Dockerfile
+    - image: solcates/dronemap_linux_arm
+      docker:
+       dockerfile: Dockerfile.arm
+profiles:
+  - name: minikube
+    activation:
+      - kubeContext: minikube
+    deploy:
+      helm:
+        releases:
+          - name: dronemap
+            chartPath: charts/dronemap
+            values:
+              "image.repository": solcates/dronemap_linux_amd
+  - name: pi
+    activation:
+      - kubeContext: pi
+    deploy:
+      helm:
+        releases:
+          - name: dronemap
+            chartPath: charts/dronemap
+            values:
+              "image.repository": solcates/dronemap_linux_arm
